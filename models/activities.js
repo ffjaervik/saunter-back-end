@@ -18,7 +18,13 @@ export async function getHighBudget() {
   );
   return res.rows;
 }
-
-export async function patchSaved() {
-  await pool.query(`UPDATE resources SET saved = NOT saved WHERE id = :id`);
+export async function getAllBudgets() {
+  const res = await query(`SELECT * FROM activities`);
+  return res.rows;
 }
+
+
+export async function patchSaved(activity) {
+  await query(`UPDATE activities SET saved = NOT saved WHERE id = $1;`, [activity.id]);
+}
+
