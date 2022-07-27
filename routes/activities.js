@@ -7,16 +7,29 @@ import {
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
+router.get("/low-budget", async (req, res) => {
     const lowBudget = await getLowBudget();
+    res.json({
+        status: "success",
+        data: lowBudget
+        });
+});
+
+router.get("/medium-budget", async (req, res) => {
     const mediumBudget = await getMediumBudget();
+    res.json({
+        status: "success",
+        data: mediumBudget
+        });
+});
+
+router.get("/high-budget", async (req, res) => {
     const highBudget = await getHighBudget();
     res.json({
-        lowBudget,
-        mediumBudget,
-        highBudget
+        status: "success",
+        data: highBudget
         });
-}
-);
+});
+
 
 export default router;

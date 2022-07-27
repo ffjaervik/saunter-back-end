@@ -18,3 +18,4 @@ export async function getHighBudget() {
   );
   return res.rows;
 }
+
