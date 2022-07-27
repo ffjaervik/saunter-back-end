@@ -2,7 +2,8 @@ import express from 'express';
 import {
     getLowBudget,
     getMediumBudget,
-    getHighBudget
+    getHighBudget,
+    patchSaved
 } from '../models/activities.js';
 
 const router = express.Router();
@@ -29,6 +30,24 @@ router.get("/high-budget", async (req, res) => {
         success: true,
         data: highBudget
         });
+});
+
+router.patch("/low-budget", async function (req, res) {
+    const activity = req.body;
+    const data = await patchSaved(activity);
+    res.json({ 
+        success: true, 
+        payload: data 
+    });
+});
+
+router.patch("/medium-budget", async function (req, res) {
+    const activity = req.body;
+    const data = await patchSaved(activity);
+    res.json({ 
+        success: true, 
+        payload: data 
+    });
 });
 
 router.patch("/high-budget", async function (req, res) {
