@@ -3,7 +3,8 @@ import {
     getLowBudget,
     getMediumBudget,
     getHighBudget,
-    patchSaved
+    patchSaved,
+    getAllBudgets
 } from '../models/activities.js';
 
 const router = express.Router();
@@ -30,6 +31,14 @@ router.get("/high-budget", async (req, res) => {
         success: true,
         data: highBudget
         });
+});
+
+router.get("/all-budgets", async (req, res) => {
+  const allBudgets = await getAllBudgets();
+  res.json({
+    success: true,
+    data: allBudgets,
+  });
 });
 
 router.patch("/low-budget", async function (req, res) {
