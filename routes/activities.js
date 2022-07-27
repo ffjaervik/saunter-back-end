@@ -6,6 +6,7 @@ import {
 } from '../models/activities.js';
 
 const router = express.Router();
+
 router.get("/", async (req, res) => {
     const lowBudget = await getLowBudget();
     const mediumBudget = await getMediumBudget();
@@ -17,3 +18,5 @@ router.get("/", async (req, res) => {
         });
 }
 );
+
+export default router;
