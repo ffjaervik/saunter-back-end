@@ -37,6 +37,10 @@ app.use(function (err, req, res, next) {
 //   console.log(`Example app listening on port ${port}`);
 // });
 
-app.listen(3001)
+app.listen(process.env.PORT || 3002, () => {
+    console.log(`Example app listening on port ${process.env.PORT || 3002}`);
+} 
+);
+
 
 export default app;
