@@ -37,7 +37,7 @@ export async function getHighEnergy() {
   return res.rows;
 }
 
-export async function getAllEnergyLevel() {
+export async function getAllEnergy() {
   const res = await query(
     `SELECT * FROM activities WHERE energy level = 1 AND 2 AND 3;`
   );

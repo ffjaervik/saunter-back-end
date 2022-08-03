@@ -3,9 +3,9 @@ import { query } from "../index.js"
 const sqlString = `CREATE TABLE IF NOT EXISTS activities (
        id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
        name VARCHAR(35),
-       budget INTEGER NOT NULL CHECK (budget between 1 and 3),
-       energy level INTEGER NOT NULL CHECK (budget between 1 and 3),
-       dog friendly BOOLEAN NOT NULL DEFAULT NULL,
+       budget INT NOT NULL CHECK (budget between 1 and 3),
+       energy_level INT NOT NULL CHECK (budget between 1 and 3),
+       dog_friendly BOOLEAN NOT NULL DEFAULT NULL,
        saved BOOLEAN NOT NULL DEFAULT FALSE,
        image TEXT
 );`;
