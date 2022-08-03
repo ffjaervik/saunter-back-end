@@ -20,7 +20,7 @@ export async function getHighBudget() {
 }
 
 export async function getAllBudgets() {
-  const res = await query(`SELECT * FROM activities WHERE budget = 1 AND 2 AND 3`);
+  const res = await query(`SELECT * FROM activities WHERE budget = 1 AND budget = 2 AND budget = 3`);
   return res.rows;
 }
 
