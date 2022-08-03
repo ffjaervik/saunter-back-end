@@ -7,7 +7,7 @@ const activities = [
       energy_level: 1,
       dog_friendly: false,
       image: "https://via.placeholder.com/600/FF8F77",
-    },
+    },git
     {
       name: "National Science Museum",
       budget: 1,
