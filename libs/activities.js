@@ -167,6 +167,7 @@ const activities = [
   energy_level:2,
   dog_friendly: true,
   saved: false,
+// The Url does not work. Needs to be changed.
   image: "https://www.dorchestercollection.com/wp-content/uploads/Untitled-1_0000_shutterstock_419352379-1-904x840.jpg​​" 
 },
 {
