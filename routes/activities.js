@@ -105,6 +105,7 @@ router.patch("/low-budget", async function (req, res) {
     });
 });
 
+
 router.patch("/medium-budget", async function (req, res) {
     const activity = req.body;
     const data = await patchSaved(activity);
@@ -123,5 +124,13 @@ router.patch("/high-budget", async function (req, res) {
     });
 });
 
+router.patch("/all-budgets", async function (req, res) {
+  const activity = req.body;
+  const data = await patchSaved(activity);
+  res.json({
+    success: true,
+    payload: data,
+  });
+});
 
 export default router;
