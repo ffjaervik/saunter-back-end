@@ -68,6 +68,7 @@ export async function postDayplan (dayplan) {
       `INSERT INTO dayplans (name, activities) VALUES ($1, $2) RETURNING *;`, 
       [dayplan.name, dayplan.activities]
   );
+  return results
 }
 
 export async function getDayplan () {
