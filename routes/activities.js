@@ -127,18 +127,14 @@ router.patch('/high-budget', async function (req, res) {
 });
 
 // DAYPLAN TABLE POST & GET & DELETE
-router.post('/', async (req, res, next) => {
+router.post('/dayplans', async (req, res, next) => {
     const data = req.body
     console.log(data)
     const results = await postDayplan(
+        data.id,
         data.name,
-        data.type,
-        data.description,
-        data.budget,
-        data.energy_level,
-        data.dog_friendly,
-        data.saved,
-        data.image
+        data.activities
+    
     )
     res.json({ success: true, payload: results })
 });
