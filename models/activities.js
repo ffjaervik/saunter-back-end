@@ -84,4 +84,12 @@ export async function deleteDayplan (id) {
   return results.rows;
 }
 
+// GET ALL SAVED ACTIVITIES
+export async function getSaved () {
+  const results = await query(
+    `SELECT * FROM activities WHERE saved = TRUE;`
+  );
+  return results.rows;
+}
+
 
