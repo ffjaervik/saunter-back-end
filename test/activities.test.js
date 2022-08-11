@@ -70,3 +70,74 @@ describe("GET /all-budgets", function () {
       .expect(200, done);
   });
 });
+
+describe("GET /all-budgets", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/all-budgets")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
+describe("GET /low-energy", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/low-energy")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
+describe("GET /medium--energy", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/medium-energy")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
+describe("GET /high-energy", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/high-energy")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
+describe("GET /all-energy", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/all-energy")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
+describe("GET /dog-friendly", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/dog-friendly")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
+describe("GET /not-dog-friendly", function () {
+  it("responds with json", function (done) {
+    request(app)
+      .get("/not-dog-friendly")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  });
+});
+
