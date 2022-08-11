@@ -1,3 +1,4 @@
+
 import {query} from "../db/index.js";
 
 export async function getLowBudget() {
@@ -60,4 +61,27 @@ export async function getNotDogFriendly () {
 export async function patchSaved(activity) {
   await query(`UPDATE activities SET saved = NOT saved WHERE id = $1;`, [activity.id]);
 }
+
+//DAYPLAN TABLE POST & GET & DELETE
+export async function postDayplan (name, type, description, budget, energy_level, dog_friendly, saved, image) {
+  const results = await query(
+      `INSERT INTO dayplans (name, type, description, budget, energy_level, dog_friendly, saved, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *;`, 
+      [name, type, description, budget, energy_level, dog_friendly, saved, image]
+  );
+}
+
+export async function getDayplan () {
+  const results = await query(
+    `SELECT * FROM dayplans;`
+  );
+  return results.rows;
+}
+
+export async function deleteDayplan (id) {
+  const results = await query(
+    `DELETE FROM dayplans WHERE id = $1;`, [id]
+  );
+  return results.rows;
+}
+
 

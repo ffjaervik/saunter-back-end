@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'
 import {
     getLowBudget,
     getMediumBudget,
@@ -10,127 +10,153 @@ import {
     getHighEnergy,
     getAllEnergy,
     getDogFriendly,
-    getNotDogFriendly
-} from '../models/activities.js';
+    getNotDogFriendly,
+    postDayplan,
+    getDayplan,
+    deleteDayplan,
+} from '../models/activities.js'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get("/low-budget", async (req, res) => {
-    const lowBudget = await getLowBudget();
+router.get('/low-budget', async (req, res) => {
+    const lowBudget = await getLowBudget()
     res.json({
         success: true,
-        data: lowBudget
-        });
-});
+        data: lowBudget,
+    })
+})
 
-router.get("/medium-budget", async (req, res) => {
-    const mediumBudget = await getMediumBudget();
+router.get('/medium-budget', async (req, res) => {
+    const mediumBudget = await getMediumBudget()
     res.json({
         success: true,
-        data: mediumBudget
-        });
-});
+        data: mediumBudget,
+    })
+})
 
-router.get("/high-budget", async (req, res) => {
-    const highBudget = await getHighBudget();
+router.get('/high-budget', async (req, res) => {
+    const highBudget = await getHighBudget()
     res.json({
         success: true,
-        data: highBudget
-        });
-});
+        data: highBudget,
+    })
+})
 
-router.get("/all-budgets", async (req, res) => {
-  const allBudgets = await getAllBudgets();
-  res.json({
-    success: true,
-    data: allBudgets,
-  });
-});
+router.get('/all-budgets', async (req, res) => {
+    const allBudgets = await getAllBudgets()
+    res.json({
+        success: true,
+        data: allBudgets,
+    })
+})
 
-router.get("/low-energy", async (req, res) => {
-    const lowEnergy = await getLowEnergy();
+router.get('/low-energy', async (req, res) => {
+    const lowEnergy = await getLowEnergy()
     res.json({
         success: true,
         data: lowEnergy,
-    });
-});
+    })
+})
 
-router.get("/medium-energy", async (req, res) => {
-    const mediumEnergy = await getMediumEnergy();
+router.get('/medium-energy', async (req, res) => {
+    const mediumEnergy = await getMediumEnergy()
     res.json({
         success: true,
         data: mediumEnergy,
-    });
-});
+    })
+})
 
-router.get("/high-energy", async (req, res) => {
-    const highEnergy = await getHighEnergy();
+router.get('/high-energy', async (req, res) => {
+    const highEnergy = await getHighEnergy()
     res.json({
         success: true,
         data: highEnergy,
-    });
-});
+    })
+})
 
-router.get("/all-energy", async (req, res) => {
-    const allEnergy = await getAllEnergy();
+router.get('/all-energy', async (req, res) => {
+    const allEnergy = await getAllEnergy()
     res.json({
         success: true,
         data: allEnergy,
-    });
-});
+    })
+})
 
-router.get("/dog-friendly", async (req, res) => {
-    const dogFriendly = await getDogFriendly();
+router.get('/dog-friendly', async (req, res) => {
+    const dogFriendly = await getDogFriendly()
     res.json({
         success: true,
         data: dogFriendly,
-    });
-});
+    })
+})
 
-router.get("/not-dog-friendly", async (req, res) => {
-    const notDogFriendly = await getNotDogFriendly();
+router.get('/not-dog-friendly', async (req, res) => {
+    const notDogFriendly = await getNotDogFriendly()
     res.json({
         success: true,
         data: notDogFriendly,
-    });
-});
+    })
+})
 
+router.patch('/low-budget', async function (req, res) {
+    const activity = req.body
+    const data = await patchSaved(activity)
+    res.json({
+        success: true,
+        payload: data,
+    })
+})
 
-router.patch("/low-budget", async function (req, res) {
-    const activity = req.body;
-    const data = await patchSaved(activity);
-    res.json({ 
-        success: true, 
-        payload: data 
-    });
-});
+router.patch('/medium-budget', async function (req, res) {
+    const activity = req.body
+    const data = await patchSaved(activity)
+    res.json({
+        success: true,
+        payload: data,
+    })
+})
 
+router.patch('/high-budget', async function (req, res) {
+    const activity = req.body
+    const data = await patchSaved(activity)
+    res.json({
+        success: true,
+        payload: data,
+    })
+})
 
-router.patch("/medium-budget", async function (req, res) {
-    const activity = req.body;
-    const data = await patchSaved(activity);
-    res.json({ 
-        success: true, 
-        payload: data 
-    });
-});
+// DAYPLAN TABLE POST & GET & DELETE
+router.post('/', async (req, res, next) => {
+    const data = req.body
+    console.log(data)
+    const results = await postDayplan(
+        data.name,
+        data.type,
+        data.description,
+        data.budget,
+        data.energy_level,
+        data.dog_friendly,
+        data.saved,
+        data.image
+    )
+    res.json({ success: true, payload: results })
+})
 
-router.patch("/high-budget", async function (req, res) {
-    const activity = req.body;
-    const data = await patchSaved(activity);
-    res.json({ 
-        success: true, 
-        payload: data 
-    });
-});
+router.get('/dayplan', async (req, res) => {
+    const data = await getDayplan()
+    res.json({
+        success: true,
+        data: data,
+    })
+})
 
-router.patch("/all-budgets", async function (req, res) {
-  const activity = req.body;
-  const data = await patchSaved(activity);
-  res.json({
-    success: true,
-    payload: data,
-  });
-});
+router.delete('/dayplan', async (req, res) => {
+    const data = await deleteDayplan()
+    res.json({
+        success: true,
+        data: data,
+    })
+})
 
-export default router;
+export default router
+
