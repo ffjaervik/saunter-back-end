@@ -142,7 +142,7 @@ router.post('/', async (req, res, next) => {
     res.json({ success: true, payload: results })
 })
 
-router.get('/dayplan', async (req, res) => {
+router.get('/dayplans', async (req, res) => {
     const data = await getDayplan()
     res.json({
         success: true,
@@ -150,7 +150,7 @@ router.get('/dayplan', async (req, res) => {
     })
 })
 
-router.delete('/dayplan', async (req, res) => {
+router.delete('/dayplans', async (req, res) => {
     const data = await deleteDayplan()
     res.json({
         success: true,
