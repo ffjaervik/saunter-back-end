@@ -63,10 +63,10 @@ export async function patchSaved(activity) {
 }
 
 //DAYPLAN TABLE POST & GET & DELETE
-export async function postDayplan (name, activities) {
+export async function postDayplan (dayplan) {
   const results = await query(
       `INSERT INTO dayplans (name, activities) VALUES ($1, $2) RETURNING *;`, 
-      [name, activities]
+      [dayplan.name, dayplan.activities]
   );
 }
 

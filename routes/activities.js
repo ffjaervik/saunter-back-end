@@ -128,14 +128,9 @@ router.patch('/high-budget', async function (req, res) {
 
 // DAYPLAN TABLE POST & GET & DELETE
 router.post('/dayplans', async (req, res, next) => {
-    const data = req.body
+    const dayplan = req.body
     console.log(data)
-    const results = await postDayplan(
-        data.id,
-        data.name,
-        data.activities
-    
-    )
+    const results = await postDayplan(dayplan)
     res.json({ success: true, payload: results })
 });
 
