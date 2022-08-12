@@ -183,7 +183,7 @@ const activities = [
   energy_level:2,
   dog_friendly: true,
   saved: false,
-  image: "https://www.publicdomainpictures.net/pictures/180000/nahled/hyde-park-london-14653750433vE.jpg​​",
+  image: "https://s0.geograph.org.uk/geophotos/06/02/97/6029737_3283dcc1.jpg",
   map: "https://goo.gl/maps/DRt8hAY7d177SwCTA" 
 },
 {

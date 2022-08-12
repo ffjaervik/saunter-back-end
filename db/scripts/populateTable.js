@@ -4,7 +4,7 @@ import activities from "../../libs/activities.js";
 async function populateTable() {
   for (let i = 0; i < activities.length; i++) {
     const response = await query(
-      `INSERT INTO activities (name, type, description, budget, energy_level, dog_friendly, saved, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *;`,
+      `INSERT INTO activities (name, type, description, budget, energy_level, dog_friendly, saved, image, map) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;`,
       [
         activities[i].name,
         activities[i].type,
@@ -14,6 +14,7 @@ async function populateTable() {
         activities[i].dog_friendly,
         activities[i].saved,
         activities[i].image,
+        activities[i].map,
       ]
     );
     console.log(response.rows);

@@ -9,7 +9,8 @@ const sqlString = `CREATE TABLE IF NOT EXISTS activities (
        energy_level INT NOT NULL CHECK (budget between 1 and 3),
        dog_friendly BOOLEAN NOT NULL DEFAULT NULL,
        saved BOOLEAN NOT NULL DEFAULT FALSE,
-       image TEXT
+       image TEXT,
+       map TEXT
 );`;
   
 
