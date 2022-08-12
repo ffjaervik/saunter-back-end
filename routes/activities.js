@@ -99,32 +99,43 @@ router.get('/not-dog-friendly', async (req, res) => {
     })
 });
 
-router.patch('/low-budget', async function (req, res) {
-    const activity = req.body
-    const data = await patchSaved(activity)
-    res.json({
-        success: true,
-        payload: data,
-    })
-});
+// router.patch('/low-budget', async function (req, res) {
+//     const activity = req.body
+//     const data = await patchSaved(activity)
+//     res.json({
+//         success: true,
+//         payload: data,
+//     })
+// });
 
-router.patch('/medium-budget', async function (req, res) {
-    const activity = req.body
-    const data = await patchSaved(activity)
-    res.json({
-        success: true,
-        payload: data,
-    })
-});
+// router.patch('/medium-budget', async function (req, res) {
+//     const activity = req.body
+//     const data = await patchSaved(activity)
+//     res.json({
+//         success: true,
+//         payload: data,
+//     })
+// });
 
-router.patch('/high-budget', async function (req, res) {
+// router.patch('/high-budget', async function (req, res) {
+//     const activity = req.body
+//     const data = await patchSaved(activity)
+//     res.json({
+//         success: true,
+//         payload: data,
+//     })
+// });
+
+router.patch('all-budgets', async function (req, res) {
     const activity = req.body
     const data = await patchSaved(activity)
     res.json({
         success: true,
         payload: data,
     })
-});
+})
+
+
 
 // DAYPLAN TABLE POST & GET & DELETE
 router.post('/dayplans', async (req, res, next) => {
