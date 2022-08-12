@@ -1,7 +1,7 @@
 const activities = [
 {
   name: "Natural History Museum",
-  type: "activity",
+  type: "Museums and Culture",
   description: "The Natural History Museum in London is a museum that exhibits a vast range of specimens from various segments of natural history.",
   budget: 1,
   energy_level: 2,
@@ -12,7 +12,7 @@ const activities = [
 },
 {
   name: "Old Royal Observatory Garden",
-  type: "activity",
+  type: "Parks and Gardens",
   description:"Stroll around the magical gardens located close to the Greenwich Observatory. Find an assortment of over 400 different botanicals from around the world.",
   budget: 1,
   energy_level:2,
@@ -23,7 +23,7 @@ const activities = [
 },
 {
   name: "Primrose Petting Zoo",
-  type: "activity",
+  type: "Good for Children",
   description: "Come and discover all the new things that are happening in our goats & llamas petting Zoo. Entry is free for children under the age of 12",
   budget: 2,
   energy_level:2,
@@ -34,7 +34,7 @@ const activities = [
 },
 {
   name: "L'Osterie",
-  type: "food & drinks",
+  type: "Food and Drink",
   description: "Fine dine with the freshest seafood available in town. L'Osterie is a renowed restaurant that frequently attracts celebrities like Eva Longoria and Brad Pitt.",
   budget: 3,
   energy_level:1,
@@ -45,7 +45,7 @@ const activities = [
 },
 {
   name: "Rough Trade",
-  type: "shopping",
+  type: "Shopping",
   description: "We welcome you to London's most renowned Vinyl trading store. Rough Trade has been standing strong since the 60's and has been visited by the likes of Jimi Hendrix, Eric Clapton & The Beatles. Located very central and easy accessible to the public",
   budget: 2,
   energy_level:1,
@@ -56,7 +56,7 @@ const activities = [
 },
 {
   name: "COLAB Theatre",
-  type: "activity",
+  type: "Muesums and Culture",
   description:"London based Immersive Theatre company comprising of different theatre companies working together to create the first home for Immersive Theatre. The venue is open to the public but we recommend checking the dates to join one of our immersive plays",
   budget: 3,
   energy_level:3,
@@ -67,7 +67,7 @@ const activities = [
 },
 {
   name: "Darcy & May Green",
-  type: "food & drinks",
+  type: "Food & Drinks",
   description: "Moored on the Grand Union Canal outside Paddington Station, Darcie Green and May Green aren’t simply floating barges; they’re also floating pieces of art designed by the legendary Sir Peter Blake.",
   budget: 2,
   energy_level:1,
@@ -78,7 +78,7 @@ const activities = [
 },
 {
   name: "CRATE Brewery",
-  type: "food & drinks",
+  type: "Food & Drinks",
   description: "Things don't get much more bucolic in London's East End than at this totally hip warehouse-style pizzeria-cum-brewery on the banks of the Lea. In summer, arrive as early as decency allows, bag a reclaimed riverside bench, then proceed to order your first pint of Crate's own craft beer, lager or cider (with perhaps a pizza on the side)",
   budget: 2,
   energy_level:1,
@@ -89,7 +89,7 @@ const activities = [
 },
 {
   name: "The Duke's Head",
-  type: "food & drinks",
+  type: "Food & Drinks",
   description: "It may date back to Victorian times, but this 150-year-old Putney institution has moved with the times. Note the spruced-up parquet floors, dangling metal lamps and gallery of modern artworks. It's not quite on the water's edge, but it certainly gets into the riverside spirit, especially when the Boat Race is on",
   budget: 2,
   energy_level:1,
@@ -100,7 +100,7 @@ const activities = [
 },
 {
   name: "The Summerhouse",
-  type: "food & drinks",
+  type: "Food & Drinks",
   description: "From the owners of nearby Waterway, this atmospheric canal-side gem originally launched as a summer-only pop-up, but became so popular that it's now a permanent, year-round fixture. It's easy to see why this place is so popular: the menu majors in flappingly fresh fish, while punters in the open-sided part of the dining room find themselves effectively right on the canal",
   budget: 3,
   energy_level:1,
@@ -111,7 +111,7 @@ const activities = [
 },
 {
   name: "Shakespeare's Globe Theatre",
-  type: "activity",
+  type: "Museums and Culture",
   description: "Shakespeare's Globe is a reconstruction of the Globe Theatre, an Elizabethan playhouse for which William Shakespeare wrote his plays, in the London Borough of Southwark, on the south bank of the River Thames",
   budget: 3,
   energy_level: 2,
@@ -122,7 +122,7 @@ const activities = [
 },
 {
   name: "Regents Park",
-  type: "activity",
+  type: "Parks and Gardens",
   description: "The Regent's Park combines large open spaces with tree-lined pathways, formal gardens, and four children’s playgrounds. It has excellent sports facilities, and contains central London's largest outdoor sports area.",
   budget: 1,
   energy_level: 2,
@@ -133,7 +133,7 @@ const activities = [
 },
 {
   name: "Tate Modern Museum",
-  type: "activity",
+  type: "Museums and Culture",
   description: "Saunter around one of the most vivid art museums in the world. TATE has been the house for many local, national & international artists. The general entry is free but we encourage considering one of the fascinating exclusive displays. Those have a low entry fee but it is worth every penny",
   budget: 1,
   energy_level: 2,
@@ -144,7 +144,7 @@ const activities = [
 },
 {
   name: "Beckenham Open Swimming Lake",
-  type: "activity",
+  type: "Wild Swimming",
   description: "City-dwellers hungry for their alfresco swim fix now have a new expanse of chilly open water to throw their shivering bods into. The Borough of Lewisham's largest green space is officially London's newest wild-swimming spot. Only technically, it's pretty ancient.",
   budget: 2,
   energy_level: 3,
@@ -155,7 +155,7 @@ const activities = [
 },
 {
   name: "Everyman Cinema Kings Cross", 
-  type: "activity",
+  type: "Museums and Culture",
   description: "This summer, Everyman Cinema  brings the open-air screen back to the steps of Granary Square at King's Cross, London. Join  from 27th June for free live screenings of Wimbledon, Tour De France and, most importantly of all, films in the sun overlooking Regent's Canal.All screenings are free to attend so there is no need to book, simply turn up to Granary Square on the day.",
   energy_level: 2,
   dog_friendly: false,
@@ -166,7 +166,7 @@ const activities = [
 },
 {
   name: "Southbank Centre",
-  type: "activity",
+  type: "Museums and Culture",
   description:"Southbank Centre is a complex of artistic venues in London, England, on the South Bank of the River Thames. It comprises three main performance venues, together with the Hayward Gallery, and is Europe's largest Centre for the arts.",
   energy_level: 2,
   dog_friendly: true,
@@ -177,7 +177,7 @@ const activities = [
 },
 {
   name: "Hyde Park" ,
-  type: "activity",
+  type: "Parks and Gardens",
   description: "Hyde Park is a Grade I-listed major park in Central London. It is the largest of four Royal Parks that form a chain from the entrance of Kensington Palace through Kensington Gardens and Hyde Park, via Hyde Park Corner and Green Park past the main entrance to Buckingham Palace.",
   budget: 1,
   energy_level:2,
@@ -188,7 +188,7 @@ const activities = [
 },
 {
   name:"Pierre Hermé Paris Covent Garden",
-  type:"food & drink",
+  type:"Food & Drink",
   description:"Representing the beauty and art of fine French macarons and chocolates at the heart of London!.",
   budget: 3,
   energy_level:1,
@@ -199,7 +199,7 @@ const activities = [
 },
 {
   name:"Barbican Centre",
-  type:"activity",
+  type:"Museums and Culture",
   description:"The Barbican Centre is a world-class arts and learning organisation, pushing the boundaries of all major art forms including dance, film, music, theatre and visual arts..",
   budget: 2,
   energy_level:2,
@@ -210,7 +210,7 @@ const activities = [
 },
 {
   name: "London Eye",
-  type: "activity",
+  type: "Popular Landmarks",
   description: "The London Eye, or the Millennium Wheel, is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom.",
   budget: 2,
   energy_level:2,
@@ -221,7 +221,7 @@ const activities = [
  },
 {
   name: "Christopher's london",
-  type: "food & drinks",
+  type: "Food & Drinks",
   description: "Classic American steakhouse & grill, plus a martini cocktail bar in high-ceilinged rooms.",
   budget: 3,
   energy_level:2,
@@ -232,7 +232,7 @@ const activities = [
 },
  {
   name: "PF Chang",
-  type: "food & drinks",
+  type: "Food & Drinks",
   description: "Family-friendly chain offering creative takes on Asian fare in a striking space.",
   budget: 3,
   energy_level:2,
@@ -243,7 +243,7 @@ const activities = [
  },
  {
   name: "Sky Garden",
-  type: "activity",
+  type: "Popular Landmarks",
   description: "Known as the walkie talkie due to its unique shape, this skyscraper features a top-floor restaurant.",
   budget: 2,
   energy_level:1,
@@ -254,7 +254,7 @@ const activities = [
  },
  {
   name: "Tower of London",
-  type: "activity",
+  type: "Museums and Culture",
   description: "The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle on the north bank of the River Thames in central London.",
   budget: 2,
   energy_level:2,
@@ -265,7 +265,7 @@ const activities = [
 },
 {
   name: "Emirates Airline Ride",
-  type: "activity",
+  type: "Activity",
   description: "Glide above the Thames in the Emirates Air Line cable car and take in aerial views of London's skyline, as you travel from the Greenwich Peninsula to the Royal Docks",
   budget: 2,
   energy_level:2,
@@ -276,7 +276,7 @@ const activities = [
  },
  {
   name: "Big Ben and Parliament",
-  type: "activity",
+  type: "Popular Landmarks",
   description: "Big Ben is the nickname for the Great Bell of the striking clock at the north end of the Palace of Westminster in London, England, and the name is frequently extended to refer also to the clock and the clock tower.", 
   budget: 1,
   energy_level:1,
@@ -287,7 +287,7 @@ const activities = [
  },
  {
   name: "King's Cross Station 9 3/4",
-  type: "activity",
+  type: "Museums and Culture",
   description: "Head to King's Cross station to see where Harry Potter & his fellow wizards depart for Hogwarts. Take a photo by the trolley. Visit the Harry Potter shop.", 
   budget: 2,
   energy_level:1,
@@ -298,7 +298,7 @@ const activities = [
  },
  {
   name: "Buckingham Palace",
-  type: "activity",
+  type: "Popular Landmarks",
   description: "Buckingham Palace is a London royal residence and the administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.",
   budget: 2,
   energy_level:2,
@@ -309,7 +309,7 @@ const activities = [
  },
  {
   name: "Trafalgar Square",
-  type: "activity",
+  type: "Popular Landmarks",
   description: "Come and discover all the new things that are happening in our goats & lamas petting Zoo. Entry is free for children under the age of 12",
   budget: 1,
   energy_level:2,
