@@ -126,7 +126,7 @@ router.get('/not-dog-friendly', async (req, res) => {
 //     })
 // });
 
-router.patch('all-budgets', async function (req, res) {
+router.patch('/all-budgets', async function (req, res) {
     const activity = req.body
     const data = await patchSaved(activity)
     res.json({
