@@ -1,7 +1,7 @@
 const activities = [
 {
   name: "Natural History Museum",
-  type: "Museums and Culture",
+  type: "Art & Culture",
   description: "The Natural History Museum in London is a museum that exhibits a vast range of specimens from various segments of natural history.",
   budget: 1,
   energy_level: 2,
@@ -11,7 +11,7 @@ const activities = [
   map: "https://goo.gl/maps/GbUjjz3yDmBb5UuYA"
 },
 {
-  name: "Old Royal Observatory Garden",
+  name: "Old Royal Observatory",
   type: "Parks and Gardens",
   description:"Stroll around the magical gardens located close to the Greenwich Observatory. Find an assortment of over 400 different botanicals from around the world.",
   budget: 1,
@@ -23,7 +23,7 @@ const activities = [
 },
 {
   name: "Primrose Petting Zoo",
-  type: "Good for Children",
+  type: "Parks and Gardens",
   description: "Come and discover all the new things that are happening in our goats & llamas petting Zoo. Entry is free for children under the age of 12",
   budget: 2,
   energy_level:2,
@@ -56,7 +56,7 @@ const activities = [
 },
 {
   name: "COLAB Theatre",
-  type: "Muesums and Culture",
+  type: "Art & Culture",
   description:"London based Immersive Theatre company comprising of different theatre companies working together to create the first home for Immersive Theatre. The venue is open to the public but we recommend checking the dates to join one of our immersive plays",
   budget: 3,
   energy_level:3,
@@ -110,8 +110,8 @@ const activities = [
   map: "https://goo.gl/maps/Yc4mbtxxm1gwMnzo8"
 },
 {
-  name: "Shakespeare's Globe Theatre",
-  type: "Museums and Culture",
+  name: "Globe Theatre",
+  type: "Art & Culture",
   description: "Shakespeare's Globe is a reconstruction of the Globe Theatre, an Elizabethan playhouse for which William Shakespeare wrote his plays, in the London Borough of Southwark, on the south bank of the River Thames",
   budget: 3,
   energy_level: 2,
@@ -133,18 +133,18 @@ const activities = [
 },
 {
   name: "Tate Modern Museum",
-  type: "Museums and Culture",
+  type: "Art & Culture",
   description: "Saunter around one of the most vivid art museums in the world. TATE has been the house for many local, national & international artists. The general entry is free but we encourage considering one of the fascinating exclusive displays. Those have a low entry fee but it is worth every penny",
   budget: 1,
   energy_level: 2,
-  dog_friendly: true,
+  dog_friendly: false,
   saved: false,
   image: "https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/07/Asus-rog-phone-6-tate-modern-main-camera-scaled.jpg",
   map: "https://goo.gl/maps/QjEe3KVmULjMiJo36"
 },
 {
-  name: "Beckenham Open Swimming Lake",
-  type: "Wild Swimming",
+  name: "Beckenham Swim Lake",
+  type: "Activity",
   description: "City-dwellers hungry for their alfresco swim fix now have a new expanse of chilly open water to throw their shivering bods into. The Borough of Lewisham's largest green space is officially London's newest wild-swimming spot. Only technically, it's pretty ancient.",
   budget: 2,
   energy_level: 3,
@@ -154,8 +154,8 @@ const activities = [
   map: "https://goo.gl/maps/Qp7BpEBbYnqXmoQP9"
 },
 {
-  name: "Everyman Cinema Kings Cross", 
-  type: "Museums and Culture",
+  name: "Everyman Cinema", 
+  type: "Art & Culture",
   description: "This summer, Everyman Cinema  brings the open-air screen back to the steps of Granary Square at King's Cross, London. Join  from 27th June for free live screenings of Wimbledon, Tour De France and, most importantly of all, films in the sun overlooking Regent's Canal.All screenings are free to attend so there is no need to book, simply turn up to Granary Square on the day.",
   energy_level: 2,
   dog_friendly: false,
@@ -166,7 +166,7 @@ const activities = [
 },
 {
   name: "Southbank Centre",
-  type: "Museums and Culture",
+  type: "Art & Culture",
   description:"Southbank Centre is a complex of artistic venues in London, England, on the South Bank of the River Thames. It comprises three main performance venues, together with the Hayward Gallery, and is Europe's largest Centre for the arts.",
   energy_level: 2,
   dog_friendly: true,
@@ -187,7 +187,7 @@ const activities = [
   map: "https://goo.gl/maps/DRt8hAY7d177SwCTA" 
 },
 {
-  name:"Pierre Hermé Paris Covent Garden",
+  name:"Pierre Hermé Paris",
   type:"Food & Drink",
   description:"Representing the beauty and art of fine French macarons and chocolates at the heart of London!.",
   budget: 3,
@@ -199,7 +199,7 @@ const activities = [
 },
 {
   name:"Barbican Centre",
-  type:"Museums and Culture",
+  type:"Art & Culture",
   description:"The Barbican Centre is a world-class arts and learning organisation, pushing the boundaries of all major art forms including dance, film, music, theatre and visual arts..",
   budget: 2,
   energy_level:2,
@@ -210,7 +210,7 @@ const activities = [
 },
 {
   name: "London Eye",
-  type: "Popular Landmarks",
+  type: "Landmarks",
   description: "The London Eye, or the Millennium Wheel, is a cantilevered observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom.",
   budget: 2,
   energy_level:2,
@@ -243,7 +243,7 @@ const activities = [
  },
  {
   name: "Sky Garden",
-  type: "Popular Landmarks",
+  type: "Landmarks",
   description: "Known as the walkie talkie due to its unique shape, this skyscraper features a top-floor restaurant.",
   budget: 2,
   energy_level:1,
@@ -254,7 +254,7 @@ const activities = [
  },
  {
   name: "Tower of London",
-  type: "Museums and Culture",
+  type: "Landmarks",
   description: "The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle on the north bank of the River Thames in central London.",
   budget: 2,
   energy_level:2,
@@ -276,7 +276,7 @@ const activities = [
  },
  {
   name: "Big Ben and Parliament",
-  type: "Popular Landmarks",
+  type: "Landmarks",
   description: "Big Ben is the nickname for the Great Bell of the striking clock at the north end of the Palace of Westminster in London, England, and the name is frequently extended to refer also to the clock and the clock tower.", 
   budget: 1,
   energy_level:1,
@@ -286,8 +286,8 @@ const activities = [
   map: "https://goo.gl/maps/oRux9vXGczBAGCBs6" 
  },
  {
-  name: "King's Cross Station 9 3/4",
-  type: "Museums and Culture",
+  name: "Station 9 3/4",
+  type: "Art & Culture",
   description: "Head to King's Cross station to see where Harry Potter & his fellow wizards depart for Hogwarts. Take a photo by the trolley. Visit the Harry Potter shop.", 
   budget: 2,
   energy_level:1,
@@ -298,7 +298,7 @@ const activities = [
  },
  {
   name: "Buckingham Palace",
-  type: "Popular Landmarks",
+  type: "Landmarks",
   description: "Buckingham Palace is a London royal residence and the administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.",
   budget: 2,
   energy_level:2,
@@ -309,7 +309,7 @@ const activities = [
  },
  {
   name: "Trafalgar Square",
-  type: "Popular Landmarks",
+  type: "Landmarks",
   description: "Come and discover all the new things that are happening in our goats & lamas petting Zoo. Entry is free for children under the age of 12",
   budget: 1,
   energy_level:2,
