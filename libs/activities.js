@@ -13,7 +13,7 @@ const activities = [
 	},
 	{
 		name: 'Old Royal Observatory',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			'Stroll around the magical gardens located close to the Greenwich Observatory. Find an assortment of over 400 different botanicals from around the world.',
 		budget: 1,
@@ -26,7 +26,7 @@ const activities = [
 	},
 	{
 		name: 'Primrose Petting Zoo',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			'Come and discover all the new things that are happening in our goats & llamas petting Zoo. Entry is free for children under the age of 12',
 		budget: 2,
@@ -38,7 +38,7 @@ const activities = [
 	},
 	{
 		name: "L'Osterie",
-		type: 'Food and Drink',
+		type: 'Food & Drink',
 		description:
 			"Fine dine with the freshest seafood available in town. L'Osterie is a renowed restaurant that frequently attracts celebrities like Eva Longoria and Brad Pitt.",
 		budget: 3,
@@ -51,7 +51,7 @@ const activities = [
 	},
 	{
 		name: 'Rough Trade',
-		type: 'Shopping',
+		type: 'Art & Culture',
 		description:
 			"We welcome you to London's most renowned Vinyl trading store. Rough Trade has been standing strong since the 60's and has been visited by the likes of Jimi Hendrix, Eric Clapton & The Beatles. Located very central and easy accessible to the public",
 		budget: 2,
@@ -77,7 +77,7 @@ const activities = [
 	},
 	{
 		name: 'Darcy & May Green',
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			'Moored on the Grand Union Canal outside Paddington Station, Darcie Green and May Green aren’t simply floating barges; they’re also floating pieces of art designed by the legendary Sir Peter Blake.',
 		budget: 2,
@@ -89,7 +89,7 @@ const activities = [
 	},
 	{
 		name: 'CRATE Brewery',
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			"Things don't get much more bucolic in London's East End than at this totally hip warehouse-style pizzeria-cum-brewery on the banks of the Lea. In summer, arrive as early as decency allows, bag a reclaimed riverside bench, then proceed to order your first pint of Crate's own craft beer, lager or cider (with perhaps a pizza on the side)",
 		budget: 2,
@@ -102,7 +102,7 @@ const activities = [
 	},
 	{
 		name: "The Duke's Head",
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			"It may date back to Victorian times, but this 150-year-old Putney institution has moved with the times. Note the spruced-up parquet floors, dangling metal lamps and gallery of modern artworks. It's not quite on the water's edge, but it certainly gets into the riverside spirit, especially when the Boat Race is on",
 		budget: 2,
@@ -114,7 +114,7 @@ const activities = [
 	},
 	{
 		name: 'The Summerhouse',
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			"From the owners of nearby Waterway, this atmospheric canal-side gem originally launched as a summer-only pop-up, but became so popular that it's now a permanent, year-round fixture. It's easy to see why this place is so popular: the menu majors in flappingly fresh fish, while punters in the open-sided part of the dining room find themselves effectively right on the canal",
 		budget: 3,
@@ -126,7 +126,7 @@ const activities = [
 	},
   {
 		name: 'Regents Park',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			"The Regent's Park combines large open spaces with tree-lined pathways, formal gardens, and four children’s playgrounds. It has excellent sports facilities, and contains central London's largest outdoor sports area.",
 		budget: 1,
@@ -138,7 +138,7 @@ const activities = [
 	},
   {
 		name: 'Fenchurch',
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			"Swanky seafood-focused restaurant for high-end dishes & drinks in the Sky Garden 37 floors up. The menu is a mix of European & American classics, plus a selection of international favourites. The restaurant is a great place to dine with a group, or to just have a drink",
 		budget: 3,
@@ -162,7 +162,7 @@ const activities = [
 	},
   {
 		name: 'Folkestone Gardens',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			'Folkestone Gardens is a small urban park located in Deptford, south east London. Now part of the London Borough of Lewisham, it was created during the 1970s on an area badly damaged by bombs in World War II.',
 		budget: 1,
@@ -237,7 +237,7 @@ const activities = [
 	},
 	{
 		name: 'Hyde Park',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			'Hyde Park is a Grade I-listed major park in Central London. It is the largest of four Royal Parks that form a chain from the entrance of Kensington Palace through Kensington Gardens and Hyde Park, via Hyde Park Corner and Green Park past the main entrance to Buckingham Palace.',
 		budget: 1,
@@ -286,7 +286,7 @@ const activities = [
 	},
 	{
 		name: "Christopher's london",
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			'Classic American steakhouse & grill, plus a martini cocktail bar in high-ceilinged rooms.',
 		budget: 3,
@@ -298,7 +298,7 @@ const activities = [
 	},
 	{
 		name: 'PF Chang',
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			'Family-friendly chain offering creative takes on Asian fare in a striking space.',
 		budget: 3,
@@ -360,7 +360,7 @@ const activities = [
 	},
   {
 		name: 'Burgess Park',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			'Burgess Park is a public park situated in Camberwell the London Borough of Southwark, and is close to Walworth to the north and Bermondsey to the east. At 56 hectares, it is one of the largest parks in South London. ',
 		budget: 1,
@@ -372,7 +372,7 @@ const activities = [
 	},
 	{
 		name: 'Cutty Sark Pub',
-		type: 'Food & Drinks',
+		type: 'Food & Drink',
 		description:
 			'Light-filled, Georgian riverside pub over 3 floors, with Thames views from the elegant dining room. Enjoy our friendly staff and a wide selection of drinks and food. Often packed with locals and tourists, this pub is a great place to meet up with friends and family.',
 		budget: 2,
@@ -448,7 +448,7 @@ const activities = [
 	},
 	{
 		name: 'Millwall Park',
-		type: 'Parks and Gardens',
+		type: 'Parks & Gardens',
 		description:
 			"Open green space offering soccer & cricket fields, a children's playground & exercise equipment. Located in the Isle of Dogs, it is very central and close to many of the tourist attractions in the area.",
 		budget: 1,
