@@ -1,12 +1,12 @@
 # Saunter Back-End Documentation
 
-![Logo](https://github.com/SchoolOfCode/final-project_back-end-team-saunter/blob/main/assets/images/Saunter%20(500%20%C3%97%20250%C2%A0px)%20(300%20%C3%97%20150%C2%A0px).png)
+<img src="https://github.com/SchoolOfCode/final-project_back-end-team-saunter/blob/main/assets/images/Saunter%20(500%20%C3%97%20250%C2%A0px)%20(300%20%C3%97%20150%C2%A0px).png" width=500px height=auto>
 
   
   <br>
   
 ## List of Contents
-1. [Authors](#authors)
+1. [Meet The Team](#meet-the-team)
 2. [Back-End Set-Up](#back-end-set-up)
 3. [Running Tests](#running-tests)
 4. [API Reference](#api-reference)
@@ -15,11 +15,11 @@
 
 <br>
 
-## Authors
+## Meet The Team
 
 - [Anastasia Starostina](https://github.com/anastasia-starostina)
-- [Emily Vickery](https://github.com/ffjaervik)
-- [Fabian Deckmann Fjaervik](https://github.com/Emily9903)
+- [Emily Vickery](https://github.com/Emily9903)
+- [Fabian Deckmann Fjaervik](https://github.com/ffjaervik)
 - [Mogool Maya Abas Bafo](https://github.com/MogoolMayaB)
 - [Owen Ahmed](https://github.com/owenowenson)
 - [Sadie Goddard](https://github.com/Sadie109)
@@ -75,12 +75,12 @@ GET /all-budgets
 
 ```
 
-#### Patch activities by id
+#### Patch activities by id. *Id is sent with request body*
 
 ```http
 
 PATCH /all-budgets
-[Id is sent with request body]
+
 
 ```
 
