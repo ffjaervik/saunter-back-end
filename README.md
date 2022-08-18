@@ -1,4 +1,4 @@
-![Logo] 
+![Logo](https://github.com/SchoolOfCode/final-project_back-end-team-saunter/blob/main/assets/images/Saunter%20(500%20%C3%97%20250%C2%A0px)%20(300%20%C3%97%20150%C2%A0px).png)
 
   
   
