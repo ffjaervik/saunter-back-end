@@ -1,7 +1,9 @@
+# Saunter Back-End Documentation
+
 ![Logo](https://github.com/SchoolOfCode/final-project_back-end-team-saunter/blob/main/assets/images/Saunter%20(500%20%C3%97%20250%C2%A0px)%20(300%20%C3%97%20150%C2%A0px).png)
 
   
-  
+  <br>
 
 ## Authors
 
@@ -13,7 +15,7 @@
 - [Sadie Goddard](https://github.com/Sadie109)
 
   
-
+<br>
 
 ## Back-End
 
@@ -36,6 +38,7 @@ The back-end is deployed on Heroku, however if you would like to run locally you
 ```bash
   npm run dev
 ```
+<br>
 
 ## Running Tests
 To run front-end testing, ensure you have installed dependencies using npm i (see above) and then run the following:
@@ -44,14 +47,14 @@ To run front-end testing, ensure you have installed dependencies using npm i (se
   npm run test
 ```
 
-
+<br>
 
   
   
 
 ## API Reference
 
-## Server live API URL: https://saunter-db.herokuapp.com/
+#### Server live API URL: https://saunter-db.herokuapp.com/
 
 
 #### Get all activities
@@ -93,7 +96,7 @@ POST /dayplans
 GET /saved
 
 ```
-
+<br>
 
 Create a new DB entry. The id is generated automatically.
 This will add a day plan to the dayplans table on the db.
@@ -108,6 +111,8 @@ Example: {
 
 }
 
+<br>
+
 
 ## Deployment
 
@@ -118,6 +123,8 @@ Create a Heroku App
 Fork the repository
 
 Link the Github repository to Heroku.
+
+<br>
 
 ## Scripts
 Make sure  development environment is running:
