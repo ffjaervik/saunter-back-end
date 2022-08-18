@@ -4,6 +4,16 @@
 
   
   <br>
+  
+## List of Contents
+1. [Authors](#authors)
+2. [Back-End Set-Up](#back-end-set-up)
+3. [Running Tests](#running-tests)
+4. [API Reference](#api-reference)
+5. [Deployment](#deployment)
+6. [Scripts](#scripts)
+
+<br>
 
 ## Authors
 
@@ -17,7 +27,7 @@
   
 <br>
 
-## Back-End
+## Back-End Set-Up
 
 The back-end is deployed on Heroku, however if you would like to run locally you will need to follow the steps below:
 
