@@ -5,15 +5,12 @@
 
 ## Authors
 
-  
-
-- Fabian Deckmann - [@ffjaervik](https://github.com/ffjaervik)
-
-- Sam Safari - [@99daycoder](https://github.com/99daycoder/)
-
-- Jaden Joel - [@jadenjoel](https://github.com/jadenjoel)
-
-- Kieran Gill - [@KieranWebDev](https://github.com/KieranWebDev)
+- [Anastasia Starostina](https://github.com/anastasia-starostina)
+- [Emily Vickery](https://github.com/ffjaervik)
+- [Fabian Deckmann Fjaervik](https://github.com/Emily9903)
+- [Mogool Maya Abas Bafo](https://github.com/MogoolMayaB)
+- [Owen Ahmed](https://github.com/owenowenson)
+- [Sadie Goddard](https://github.com/Sadie109)
 
   
 
