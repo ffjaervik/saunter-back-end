@@ -2,8 +2,7 @@
 import pg from 'pg';
 export const pool = new pg.Pool({
   connectionString:
-    "postgres://hmsosdvhfkbofu:faf9e01c975b048388820d43eede8145e936300f0407f5d789b8ec6270d18a59@ec2-54-220-86-118.eu-west-1.compute.amazonaws.com:5432/d7176nhb6i9kj5",
-
+    "postgres://hsnqbnzphmbbkn:af1a03860fb5c34077229fac9648ae0db7d1f7d5589227c21b87c10aacba492c@ec2-34-252-216-149.eu-west-1.compute.amazonaws.com:5432/d8sm9mdpakvqo9",
   ssl: {
     rejectUnauthorized: false,
   },

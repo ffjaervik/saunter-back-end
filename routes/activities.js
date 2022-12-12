@@ -39,7 +39,6 @@ router.patch('/all-budgets', async function (req, res) {
 })
 
 
-
 // DAYPLAN TABLE POST & GET & DELETE
 router.post('/dayplans', async (req, res, next) => {
     const dayplan = req.body
@@ -72,79 +71,80 @@ router.get('/saved', async (req, res) => {
         data: data,
     })
 });
-// router.get('/low-budget', async (req, res) => {
-    //     const lowBudget = await getLowBudget()
-    //     res.json({
-//         success: true,
-//         data: lowBudget,
-//     })
-// });
 
-// router.get('/medium-budget', async (req, res) => {
-//     const mediumBudget = await getMediumBudget()
-//     res.json({
-//         success: true,
-//         data: mediumBudget,
-//     })
-// });
+router.get('/low-budget', async (req, res) => {
+        const lowBudget = await getLowBudget()
+        res.json({
+        success: true,
+        data: lowBudget,
+    })
+});
 
-// router.get('/high-budget', async (req, res) => {
-//     const highBudget = await getHighBudget()
-//     res.json({
-//         success: true,
-//         data: highBudget,
-//     })
-// });
+router.get('/medium-budget', async (req, res) => {
+    const mediumBudget = await getMediumBudget()
+    res.json({
+        success: true,
+        data: mediumBudget,
+    })
+});
 
-// FILTER BY ENERGY LEVEL
-// router.get('/low-energy', async (req, res) => {
-//     const lowEnergy = await getLowEnergy()
-//     res.json({
-//         success: true,
-//         data: lowEnergy,
-//     })
-// });
+router.get('/high-budget', async (req, res) => {
+    const highBudget = await getHighBudget()
+    res.json({
+        success: true,
+        data: highBudget,
+    })
+});
 
-// router.get('/medium-energy', async (req, res) => {
-//     const mediumEnergy = await getMediumEnergy()
-//     res.json({
-//         success: true,
-//         data: mediumEnergy,
-//     })
-// });
+//FILTER BY ENERGY LEVEL
+router.get('/low-energy', async (req, res) => {
+    const lowEnergy = await getLowEnergy()
+    res.json({
+        success: true,
+        data: lowEnergy,
+    })
+});
 
-// router.get('/high-energy', async (req, res) => {
-//     const highEnergy = await getHighEnergy()
-//     res.json({
-//         success: true,
-//         data: highEnergy,
-//     })
-// });
+router.get('/medium-energy', async (req, res) => {
+    const mediumEnergy = await getMediumEnergy()
+    res.json({
+        success: true,
+        data: mediumEnergy,
+    })
+});
 
-// router.get('/all-energy', async (req, res) => {
-//     const allEnergy = await getAllEnergy()
-//     res.json({
-//         success: true,
-//         data: allEnergy,
-//     })
-// });
+router.get('/high-energy', async (req, res) => {
+    const highEnergy = await getHighEnergy()
+    res.json({
+        success: true,
+        data: highEnergy,
+    })
+});
+
+router.get('/all-energy', async (req, res) => {
+    const allEnergy = await getAllEnergy()
+    res.json({
+        success: true,
+        data: allEnergy,
+    })
+});
 
 //FILTER BY DOG-FRIENDLY
-// router.get('/dog-friendly', async (req, res) => {
-//     const dogFriendly = await getDogFriendly()
-//     res.json({
-//         success: true,
-//         data: dogFriendly,
-//     })
-// });
+router.get('/dog-friendly', async (req, res) => {
+    const dogFriendly = await getDogFriendly()
+    res.json({
+        success: true,
+        data: dogFriendly,
+    })
+});
 
-// router.get('/not-dog-friendly', async (req, res) => {
-//     const notDogFriendly = await getNotDogFriendly()
-//     res.json({
-//         success: true,
-//         data: notDogFriendly,
-//     })
-// });
+router.get('/not-dog-friendly', async (req, res) => {
+    const notDogFriendly = await getNotDogFriendly()
+    res.json({
+        success: true,
+        data: notDogFriendly,
+    })
+});
 
 
 
